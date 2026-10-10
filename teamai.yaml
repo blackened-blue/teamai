@@ -13,6 +13,6 @@ packages:
   claude:
     marketplaces:
       - name: wiki-skills
-        repo: https://github.com/kfchou/wiki-skills
+        repo: kfchou/wiki-skills
     plugins:
       - name: wiki-skills@wiki-skills
