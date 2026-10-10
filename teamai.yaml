@@ -9,3 +9,10 @@ sharing:
     localDir: ./.teamai/docs
   env:
     injectShellProfile: true
+packages:
+  claude:
+    marketplaces:
+      - name: wiki-skills
+        repo: https://github.com/kfchou/wiki-skills
+    plugins:
+      - name: wiki-skills@wiki-skills
