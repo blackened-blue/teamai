@@ -1,5 +1,5 @@
 username: blackened-blue
-updatedAt: 2026-10-25T13:28:25.469Z
+updatedAt: 2026-10-25T13:45:50.764Z
 skills:
   speckit-plan:
     count: 1
@@ -8,13 +8,13 @@ interventions:
   sessions: 23
   interrupt: 0
   toolReject: 0
-  correction: 66
-prompts: 248
+  correction: 67
+prompts: 254
 tokens:
-  input: 1446
-  output: 756498
-  cacheRead: 155412098
-  cacheCreation: 3992533
+  input: 1532
+  output: 881993
+  cacheRead: 183088924
+  cacheCreation: 4724329
 daily:
   2026-10-22:
     sessionsEnded: 5
@@ -40,13 +40,13 @@ daily:
   2026-10-24:
     sessionsEnded: 1
     sessionsSucceeded: 0
-    promptTurns: 58
-    durationMs: 4921608
+    promptTurns: 64
+    durationMs: 5967224
     sessionsCorrected: 1
     pricedRequests: 176
     costMicros: 19628368
-    cacheReadTokens: 57233027
-    cacheEligibleInputTokens: 58661818
+    cacheReadTokens: 84909853
+    cacheEligibleInputTokens: 87070526
     priceVersion: anthropic-2026-09-09
   2026-10-25:
     sessionsEnded: 1
@@ -54,7 +54,8 @@ daily:
     promptTurns: 7
     durationMs: 896041
     sessionsCorrected: 0
-    pricedRequests: 0
-    costMicros: 0
+    pricedRequests: 43
+    costMicros: 8619979
     cacheReadTokens: 734372
     cacheEligibleInputTokens: 803108
+    priceVersion: anthropic-2026-09-09
