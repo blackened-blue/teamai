@@ -1,12 +1,12 @@
 username: blackened-blue
-updatedAt: 2026-11-27T16:38:06.177Z
+updatedAt: 2026-11-27T17:22:06.138Z
 skills:
   speckit-plan:
     count: 1
     lastUsed: 2026-10-23T16:57:59.754Z
   teamai:
-    count: 14
-    lastUsed: 2026-11-08T10:24:46.457Z
+    count: 15
+    lastUsed: 2026-11-27T16:39:27.849Z
   grilling:
     count: 1
     lastUsed: 2026-10-27T16:37:04.054Z
@@ -20,16 +20,16 @@ skills:
     count: 1
     lastUsed: 2026-11-08T10:29:26.340Z
 interventions:
-  sessions: 54
+  sessions: 55
   interrupt: 2
   toolReject: 1
   correction: 136
-prompts: 602
+prompts: 609
 tokens:
-  input: 4712
-  output: 2930051
-  cacheRead: 573231562
-  cacheCreation: 12612394
+  input: 4796
+  output: 2970828
+  cacheRead: 576794819
+  cacheCreation: 12711568
 daily:
   2026-10-22:
     sessionsEnded: 5
@@ -168,18 +168,29 @@ daily:
     cacheReadTokens: 6164711
     cacheEligibleInputTokens: 6329342
     priceVersion: litellm-2026-10-31-b264711
+  2026-11-27:
+    sessionsEnded: 1
+    sessionsSucceeded: 1
+    promptTurns: 7
+    durationMs: 1224782
+    sessionsCorrected: 0
+    pricedRequests: 41
+    costMicros: 227644
+    cacheReadTokens: 3563257
+    cacheEligibleInputTokens: 3662515
+    priceVersion: litellm-2026-10-31-b264711
 attended:
   interventions:
-    sessions: 23
+    sessions: 24
     interrupt: 1
     toolReject: 1
     correction: 26
-  prompts: 175
+  prompts: 182
   tokens:
-    input: 1508
-    output: 852661
-    cacheRead: 153225563
-    cacheCreation: 2912813
+    input: 1592
+    output: 893438
+    cacheRead: 156788820
+    cacheCreation: 3011987
   daily:
     2026-10-28:
       sessionsEnded: 0
@@ -252,6 +263,17 @@ attended:
       costMicros: 117900
       cacheReadTokens: 6164711
       cacheEligibleInputTokens: 6329342
+      priceVersion: litellm-2026-10-31-b264711
+    2026-11-27:
+      sessionsEnded: 1
+      sessionsSucceeded: 1
+      promptTurns: 7
+      durationMs: 1224782
+      sessionsCorrected: 0
+      pricedRequests: 41
+      costMicros: 227644
+      cacheReadTokens: 3563257
+      cacheEligibleInputTokens: 3662515
       priceVersion: litellm-2026-10-31-b264711
 outcomes:
   attended:
