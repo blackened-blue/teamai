@@ -5,7 +5,13 @@ domain: code-knowledge
 
 # github__Tencent__teamai-cli
 
-Facts: 2729 | Pages: 10
+Facts: 13807 | Pages: 13
+
+## Interface Inventory
+
+| Type | Count |
+|------|-------|
+| MQ | 2 |
 
 ## Pages
 
@@ -18,4 +24,7 @@ Facts: 2729 | Pages: 10
 - [relation-scripts.md](./relation-scripts.md)
 - [relation-packages.md](./relation-packages.md)
 - [relation-vitest.windows.config.ts.md](./relation-vitest.windows.config.ts.md)
+- [relation-.github.md](./relation-.github.md)
+- [relation-skill-data.md](./relation-skill-data.md)
+- [interfaces.md](./interfaces.md)
 - [dependency-paths.md](./dependency-paths.md)

@@ -1,19 +1,20 @@
 # Team Wiki Index
 
-Last updated: 2026-11-27T16:43:55.748Z
+Last updated: 2026-11-27T16:45:30.424Z
 
 ## Stats
 
 - 仓库: 1
-- Facts: 2729
-- 图谱节点: 1108
-- 图谱边: 815
+- Facts: 13807
+- 图谱节点: 7307
+- 图谱边: 18743
+- 接口: MQ:2
 
 ## Domain Summaries
 
-### 其他
+### 其他 (2 APIs)
 
-- [github__Tencent__teamai-cli](./evidence/code/github__Tencent__teamai-cli/index.md) — **2729 facts** extracted from 161 files. Graph: 1108 nodes, 815 edges.
+- [github__Tencent__teamai-cli](./evidence/code/github__Tencent__teamai-cli/index.md) — **13807 facts** extracted from 1040 files. Graph: 7307 nodes, 18743 edges.
 
 ## Navigation
 

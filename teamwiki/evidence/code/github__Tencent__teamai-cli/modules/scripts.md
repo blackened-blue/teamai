@@ -6,35 +6,38 @@ source: [scripts/]
 
 # scripts
 
-**35 facts** (component: 28, interface: 5, config: 2)
+**171 facts** (component: 139, interface: 27, config: 5)
 
-**Depends on**: src, packages
-**Depended by**: src
+**Depends on**: packages, src
+**Depended by**: src, packages
 
 ## Core components
 
-- `loadCommandTable` ← scripts/command-table.ts:2 (1 refs)
-- `COMMANDS_REFERENCE_PATH` ← scripts/commands-reference.ts:17 (1 refs)
-- `renderCommandsReference` ← scripts/commands-reference.ts:78 (1 refs)
-- `catalogFromLiteLlm` ← scripts/model-prices.ts:125 (1 refs)
-- `parseCatalog` ← scripts/model-prices.ts:168 (1 refs)
-- `formatCatalog` ← scripts/model-prices.ts:173 (1 refs)
-- `describeCatalogChange` ← scripts/model-prices.ts:182 (1 refs)
-- `TOOL_SUPPORT_PAGES` ← scripts/tool-support.ts:17 (1 refs)
-- `ToolSupportLang` ← scripts/tool-support.ts:22 (1 refs)
-- `renderToolSupportPage` ← scripts/tool-support.ts:241 (1 refs)
-- `observerReads` ← scripts/verify/observer.ts:58
-- `attemptsObserved` ← scripts/verify/observer.ts:68
-- `Listed` ← scripts/verify/observer.ts:167
-- `ProcEntry` ← scripts/verify/observer.ts:192
-- `bwrapSteps` ← scripts/verify/observer.ts:203
-- `startObserver` ← scripts/verify/observer.ts:236
-- `measureAgentContext` ← scripts/agent-context-budget.ts:84
-- `compareAgentContext` ← scripts/agent-context-budget.ts:147
-- `AgentWaitBudgetSchema` ← scripts/agent-wait-budget.ts:55
-- `AgentWaitBudget` ← scripts/agent-wait-budget.ts:64
+- `readMarkdown` ← scripts/doc-checks/read-markdown.ts:4 (20 refs)
+- `ShippedHome` ← scripts/verify/shipped-homes.ts:17 (14 refs)
+- `movedShippedHomes` ← scripts/verify/shipped-homes.ts:37 (14 refs)
+- `recordShippedHomes` ← scripts/verify/shipped-homes.ts:67 (14 refs)
+- `recordedShippedHomes` ← scripts/verify/shipped-homes.ts:79 (14 refs)
+- `REPO_ROOT` ← scripts/verify/world.ts:17 (14 refs)
+- `WORLDS_ROOT` ← scripts/verify/world.ts:18 (14 refs)
+- `TEAM_URL` ← scripts/verify/world.ts:21 (14 refs)
+- `Member` ← scripts/verify/world.ts:42 (14 refs)
+- `World` ← scripts/verify/world.ts:75 (14 refs)
+- `UNREADABLE` ← scripts/verify/world.ts:100 (14 refs)
+- `GONE` ← scripts/verify/world.ts:115 (14 refs)
+- `present` ← scripts/verify/world.ts:118 (14 refs)
+- `worldFiles` ← scripts/verify/world.ts:132 (14 refs)
+- `gitconfigText` ← scripts/verify/world.ts:174 (14 refs)
+- `git` ← scripts/verify/world.ts:180 (14 refs)
+- `checkoutStatus` ← scripts/verify/world.ts:184 (14 refs)
+- `teamRefs` ← scripts/verify/world.ts:188 (14 refs)
+- `quote` ← scripts/verify/world.ts:202 (14 refs)
+- `TOOL_COMMANDS` ← scripts/verify/world.ts:204 (14 refs)
 
 ## Config
 
 - `process.env.TEAMAI_COMMAND_TABLE_ONLY` ← scripts/command-table.ts
 - `process.env.GITHUB_TOKEN` ← scripts/update-model-prices.ts
+- `process.env.PATH` ← scripts/verify/world.ts
+- `process.env.LANG` ← scripts/verify/world.ts
+- `process.env.TERM` ← scripts/verify/world.ts

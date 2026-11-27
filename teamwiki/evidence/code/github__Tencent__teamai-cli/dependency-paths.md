@@ -7,96 +7,807 @@ domain: code-knowledge
 
 Static import dependency paths (not runtime call traces).
 
-17 dependency path(s) traced from entry points (max depth 4).
+40 dependency path(s) traced from entry points (max depth 4).
 
-## HandlerRegistration (src/hook-handlers.ts)
+## WebhookEndpointSchema (src/types.ts)
 
-- [entry] `HandlerRegistration` ← src/hook-handlers.ts:29
-      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
-    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
-    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
-    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+- [entry] `WebhookEndpointSchema` ← src/types.ts:4302
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `resetBundledRuntimeCache` ← src/bundled-runtime.ts:30
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `CheckoutLockedError` ← src/maintenance/paths.ts:27
+    - [service] `findPromotionCandidates` ← src/maintenance/promote.ts:50
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `noArrayFilterMapRule` ← oxlint-plugin-teamai/anti-slop/rules/no-array-filter-map.ts:6
+    - [service] `noChainedTypeAssertionsRule` ← oxlint-plugin-teamai/anti-slop/rules/no-chained-type-assertions.ts:54
+    - [service] `noConditionalEmptyObjectSpreadRule` ← oxlint-plugin-teamai/anti-slop/rules/no-conditional-empty-object-spread.ts:26
+    - [service] `noKnownValueWideningRule` ← oxlint-plugin-teamai/anti-slop/rules/no-known-value-widening.ts:271
+    - [service] `noModuleMockingRule` ← oxlint-plugin-teamai/anti-slop/rules/no-module-mocking.ts:58
+    - [service] `LAUNCH_ADAPTERS` ← src/launch-registry.ts:13
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `toolHomeVariableNames` ← src/tool-home.ts:46
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `GitAnswers` ← src/utils/git-answers.ts:26
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+    - [service] `mergeTeamConfig` ← src/utils/yaml.ts:6
+    - [service] `parseYaml` ← packages/shared/src/yaml.ts:16
+    - [service] `filterExistingTopLevelPaths` ← src/push.ts:66
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+    - [service] `placeOf` ← packages/runtime-sandbox/src/attempt-socket.ts:27
+    - [service] `serveAttemptSocket` ← packages/runtime-paseo/src/testing/attempt-socket.ts:44
+    - [service] `TAIL_CHARS` ← packages/runtime-sandbox/src/bounded-tail.ts:9
+    - [service] `givenCredentials` ← packages/runtime-sandbox/src/exec.ts:92
+    - [service] `probeBinary` ← packages/shared/src/exec.ts:102
+      - [data] `recordStore` ← packages/runtime-kit/src/journal.ts:37
+    - [service] `paseoKeyOf` ← packages/runtime-paseo/src/journal.ts:174
+    - [service] `judging` ← packages/runtime-paseo/src/judge.ts:32
+    - [service] `EVIDENCE_DIR` ← packages/runtime-sandbox/src/judge.ts:31
+    - [service] `settleLateUsageReport` ← src/pull.ts:124
+    - [service] `dropIndexesAfterRebuild` ← src/utils/search-index.ts:53
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `publishQueuedLearnings` ← src/utils/learnings-publish.ts:65
 
-## PULL_TIMEOUT_MS (src/hook-handlers.ts)
+## WebhookEndpoint (src/types.ts)
 
-- [entry] `PULL_TIMEOUT_MS` ← src/hook-handlers.ts:109
-      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
-    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
-    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
-    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+- [entry] `WebhookEndpoint` ← src/types.ts:4316
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `resetBundledRuntimeCache` ← src/bundled-runtime.ts:30
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `CheckoutLockedError` ← src/maintenance/paths.ts:27
+    - [service] `findPromotionCandidates` ← src/maintenance/promote.ts:50
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `noArrayFilterMapRule` ← oxlint-plugin-teamai/anti-slop/rules/no-array-filter-map.ts:6
+    - [service] `noChainedTypeAssertionsRule` ← oxlint-plugin-teamai/anti-slop/rules/no-chained-type-assertions.ts:54
+    - [service] `noConditionalEmptyObjectSpreadRule` ← oxlint-plugin-teamai/anti-slop/rules/no-conditional-empty-object-spread.ts:26
+    - [service] `noKnownValueWideningRule` ← oxlint-plugin-teamai/anti-slop/rules/no-known-value-widening.ts:271
+    - [service] `noModuleMockingRule` ← oxlint-plugin-teamai/anti-slop/rules/no-module-mocking.ts:58
+    - [service] `LAUNCH_ADAPTERS` ← src/launch-registry.ts:13
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `toolHomeVariableNames` ← src/tool-home.ts:46
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `GitAnswers` ← src/utils/git-answers.ts:26
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+    - [service] `mergeTeamConfig` ← src/utils/yaml.ts:6
+    - [service] `parseYaml` ← packages/shared/src/yaml.ts:16
+    - [service] `filterExistingTopLevelPaths` ← src/push.ts:66
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+    - [service] `placeOf` ← packages/runtime-sandbox/src/attempt-socket.ts:27
+    - [service] `serveAttemptSocket` ← packages/runtime-paseo/src/testing/attempt-socket.ts:44
+    - [service] `TAIL_CHARS` ← packages/runtime-sandbox/src/bounded-tail.ts:9
+    - [service] `givenCredentials` ← packages/runtime-sandbox/src/exec.ts:92
+    - [service] `probeBinary` ← packages/shared/src/exec.ts:102
+      - [data] `recordStore` ← packages/runtime-kit/src/journal.ts:37
+    - [service] `paseoKeyOf` ← packages/runtime-paseo/src/journal.ts:174
+    - [service] `judging` ← packages/runtime-paseo/src/judge.ts:32
+    - [service] `EVIDENCE_DIR` ← packages/runtime-sandbox/src/judge.ts:31
+    - [service] `settleLateUsageReport` ← src/pull.ts:124
+    - [service] `dropIndexesAfterRebuild` ← src/utils/search-index.ts:53
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `publishQueuedLearnings` ← src/utils/learnings-publish.ts:65
 
-## buildAdoptedSummary (src/hook-handlers.ts)
+## WorkflowsHandler (src/resources/workflows.ts)
 
-- [entry] `buildAdoptedSummary` ← src/hook-handlers.ts:668
-      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
-    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
-    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
-    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
-
-## eligibleUpvotes (src/hook-handlers.ts)
-
-- [entry] `eligibleUpvotes` ← src/hook-handlers.ts:683
-      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
-    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
-    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
-    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
-
-## buildHandlerRegistry (src/hook-handlers.ts)
-
-- [entry] `buildHandlerRegistry` ← src/hook-handlers.ts:1354
-      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
-    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
-    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
-    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
-
-## filterHandlersForConfig (src/hook-handlers.ts)
-
-- [entry] `filterHandlersForConfig` ← src/hook-handlers.ts:1472
-      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
-    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
-    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
-    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
-
-## observerReads (scripts/verify/observer.ts)
-
-    - [service] `observerReads` ← scripts/verify/observer.ts:58
-
-## attemptsObserved (scripts/verify/observer.ts)
-
-    - [service] `attemptsObserved` ← scripts/verify/observer.ts:68
-
-## Listed (scripts/verify/observer.ts)
-
-    - [service] `Listed` ← scripts/verify/observer.ts:167
-
-## ProcEntry (scripts/verify/observer.ts)
-
-    - [service] `ProcEntry` ← scripts/verify/observer.ts:192
-
-## bwrapSteps (scripts/verify/observer.ts)
-
-    - [service] `bwrapSteps` ← scripts/verify/observer.ts:203
-
-## startObserver (scripts/verify/observer.ts)
-
-    - [service] `startObserver` ← scripts/verify/observer.ts:236
+- [entry] `WorkflowsHandler` ← src/resources/workflows.ts:25
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `LAUNCH_ADAPTERS` ← src/launch-registry.ts:13
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+    - [service] `settleLateUsageReport` ← src/pull.ts:124
+    - [service] `SCORER_MARKER` ← src/scorers/folder.ts:18
+  - [orchestration] `WORKFLOW_MARKER` ← src/workflow/folder.ts:22
+    - [service] `FolderFiles` ← src/resources/folder-files.ts:82
+    - [service] `listRepoFilesRecursive` ← src/resources/repo-resource.ts:14
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `CODE_COLLECTION_VERSION` ← src/wiki-engine/code-knowledge/code-collector.ts:28
+    - [service] `mapKindToEvidenceType` ← src/wiki-engine/code-knowledge/code-fact-kind.ts:9
+    - [service] `isMetadataRelation` ← src/wiki-engine/code-knowledge/code-extractors.ts:22
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `RESOURCE_LAYOUTS` ← src/resources/resolver.ts:120
+    - [service] `packageRoot` ← src/package-info.ts:38
 
 ## getHandler (src/resources/index.ts)
 
 - [entry] `getHandler` ← src/resources/index.ts:36
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `CODEX_TOOL` ← src/resources/skills.ts:40
+    - [service] `RESOURCE_LAYOUTS` ← src/resources/resolver.ts:120
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `packageRoot` ← src/package-info.ts:38
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `FolderFiles` ← src/resources/folder-files.ts:82
+    - [service] `TeamSkillSource` ← src/resources/team-skill-source.ts:100
+      - [data] `FrontmatterDateSchema` ← src/utils/frontmatter.ts:6
+- [entry] `RulesHandler` ← src/resources/rules.ts:70
+    - [service] `RuleFolders` ← src/resources/rule-folders.ts:241
+    - [service] `PATH_VARIABLES` ← src/resources/delivered-folders.ts:44
+    - [service] `splitRuleFrontmatter` ← src/resources/team-rule.ts:28
+    - [service] `resolveDocsDestination` ← src/resources/docs.ts:24
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+    - [service] `unknownEnvVariableKeys` ← src/resources/env.ts:60
+    - [service] `listRepoFilesRecursive` ← src/resources/repo-resource.ts:14
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
 
 ## getAllHandlers (src/resources/index.ts)
 
 - [entry] `getAllHandlers` ← src/resources/index.ts:40
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `CODEX_TOOL` ← src/resources/skills.ts:40
+    - [service] `RESOURCE_LAYOUTS` ← src/resources/resolver.ts:120
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `packageRoot` ← src/package-info.ts:38
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `FolderFiles` ← src/resources/folder-files.ts:82
+    - [service] `TeamSkillSource` ← src/resources/team-skill-source.ts:100
+      - [data] `FrontmatterDateSchema` ← src/utils/frontmatter.ts:6
+- [entry] `RulesHandler` ← src/resources/rules.ts:70
+    - [service] `RuleFolders` ← src/resources/rule-folders.ts:241
+    - [service] `PATH_VARIABLES` ← src/resources/delivered-folders.ts:44
+    - [service] `splitRuleFrontmatter` ← src/resources/team-rule.ts:28
+    - [service] `resolveDocsDestination` ← src/resources/docs.ts:24
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+    - [service] `unknownEnvVariableKeys` ← src/resources/env.ts:60
+    - [service] `listRepoFilesRecursive` ← src/resources/repo-resource.ts:14
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
 
-## HookHandler (src/hook-dispatch.ts)
+## TrendPoint (src/viz.ts)
 
-- [entry] `HookHandler` ← src/hook-dispatch.ts:38
+- [entry] `TrendPoint` ← src/viz.ts:69
+    - [service] `dropIndexesAfterRebuild` ← src/utils/search-index.ts:53
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `MAX_TOKENIZE_CHARS` ← src/utils/tokenizer.ts:24
+    - [service] `splitRuleFrontmatter` ← src/resources/team-rule.ts:28
+    - [service] `AGENT_FILE_EXTENSIONS` ← src/resources/agent-format.ts:26
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `GitAnswers` ← src/utils/git-answers.ts:26
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+    - [service] `mergeTeamConfig` ← src/utils/yaml.ts:6
+    - [service] `parseYaml` ← packages/shared/src/yaml.ts:16
+    - [service] `filterExistingTopLevelPaths` ← src/push.ts:66
+    - [service] `learningsRoots` ← src/utils/learnings-roots.ts:76
+    - [service] `isAbsolutePath` ← src/utils/agent-path.ts:14
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `learningsBranch` ← src/utils/learnings-branch.ts:16
+    - [service] `isPublished` ← src/utils/branch-worktree.ts:73
+    - [service] `withVotesLock` ← src/votes.ts:45
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `recallLogPath` ← src/recall-log.ts:170
+      - [data] `appendJsonl` ← src/utils/jsonl-store.ts:62
+    - [service] `RESOURCE_RELATIONS` ← src/resource-relations.ts:25
+    - [service] `resolveRegistryForPackage` ← src/update.ts:64
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `VERSION_CHECK_TIMEOUT` ← src/update-policy.ts:5
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `LEARNINGS_RELEVANCE_RATIO` ← src/recall.ts:91
 
-## HandlerRegistration (src/hook-dispatch.ts)
+## RepoResourceHandler (src/resources/repo-resource.ts)
 
-- [entry] `HandlerRegistration` ← src/hook-dispatch.ts:52
+- [entry] `RepoResourceHandler` ← src/resources/repo-resource.ts:238
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `CODE_COLLECTION_VERSION` ← src/wiki-engine/code-knowledge/code-collector.ts:28
+    - [service] `safeIgnore` ← src/wiki-engine/core/wiki-protocol.ts:155
+    - [service] `mapKindToEvidenceType` ← src/wiki-engine/code-knowledge/code-fact-kind.ts:9
+    - [service] `isMetadataRelation` ← src/wiki-engine/code-knowledge/code-extractors.ts:22
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+    - [service] `warnOnce` ← src/utils/warn-once.ts:11
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
 
-## main (scripts/verify/observer.ts)
+## profileRoutes (src/models/profile.ts)
 
-    - [service] `main` ← scripts/verify/observer.ts:1
+- [entry] `profileRoutes` ← src/models/profile.ts:96
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `LAUNCH_ADAPTERS` ← src/launch-registry.ts:13
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+    - [service] `settleLateUsageReport` ← src/pull.ts:124
+    - [service] `resolveRegistryForPackage` ← src/update.ts:64
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `CODE_COLLECTION_VERSION` ← src/wiki-engine/code-knowledge/code-collector.ts:28
+    - [service] `mapKindToEvidenceType` ← src/wiki-engine/code-knowledge/code-fact-kind.ts:9
+    - [service] `isMetadataRelation` ← src/wiki-engine/code-knowledge/code-extractors.ts:22
+    - [service] `VERSION_CHECK_TIMEOUT` ← src/update-policy.ts:5
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+
+## ResolvedModelRoute (src/models/profile.ts)
+
+- [entry] `ResolvedModelRoute` ← src/models/profile.ts:180
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `LAUNCH_ADAPTERS` ← src/launch-registry.ts:13
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+    - [service] `settleLateUsageReport` ← src/pull.ts:124
+    - [service] `resolveRegistryForPackage` ← src/update.ts:64
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `CODE_COLLECTION_VERSION` ← src/wiki-engine/code-knowledge/code-collector.ts:28
+    - [service] `mapKindToEvidenceType` ← src/wiki-engine/code-knowledge/code-fact-kind.ts:9
+    - [service] `isMetadataRelation` ← src/wiki-engine/code-knowledge/code-extractors.ts:22
+    - [service] `VERSION_CHECK_TIMEOUT` ← src/update-policy.ts:5
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+
+## McpHandler (src/resources/mcp.ts)
+
+- [entry] `McpHandler` ← src/resources/mcp.ts:344
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `listRepoFilesRecursive` ← src/resources/repo-resource.ts:14
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `CODE_COLLECTION_VERSION` ← src/wiki-engine/code-knowledge/code-collector.ts:28
+    - [service] `mapKindToEvidenceType` ← src/wiki-engine/code-knowledge/code-fact-kind.ts:9
+    - [service] `isMetadataRelation` ← src/wiki-engine/code-knowledge/code-extractors.ts:22
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `parseMarker` ← src/resources/layered-entries.ts:64
+    - [service] `FolderFiles` ← src/resources/folder-files.ts:82
+
+## HandlerRegistration (src/hook-handlers.ts)
+
+- [entry] `HandlerRegistration` ← src/hook-handlers.ts:29
+    - [service] `entryLayout` ← src/namespaced-entries.ts:74
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+  - [orchestration] `DriverNameSchema` ← src/workflow/driver-name.ts:11
+  - [orchestration] `RESERVED_DRIVERS` ← src/workflow/reserved-drivers.ts:7
+    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+
+## PULL_TIMEOUT_MS (src/hook-handlers.ts)
+
+- [entry] `PULL_TIMEOUT_MS` ← src/hook-handlers.ts:109
+    - [service] `entryLayout` ← src/namespaced-entries.ts:74
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+  - [orchestration] `DriverNameSchema` ← src/workflow/driver-name.ts:11
+  - [orchestration] `RESERVED_DRIVERS` ← src/workflow/reserved-drivers.ts:7
+    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+
+## buildAdoptedSummary (src/hook-handlers.ts)
+
+- [entry] `buildAdoptedSummary` ← src/hook-handlers.ts:668
+    - [service] `entryLayout` ← src/namespaced-entries.ts:74
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+  - [orchestration] `DriverNameSchema` ← src/workflow/driver-name.ts:11
+  - [orchestration] `RESERVED_DRIVERS` ← src/workflow/reserved-drivers.ts:7
+    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+
+## eligibleUpvotes (src/hook-handlers.ts)
+
+- [entry] `eligibleUpvotes` ← src/hook-handlers.ts:683
+    - [service] `entryLayout` ← src/namespaced-entries.ts:74
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+  - [orchestration] `DriverNameSchema` ← src/workflow/driver-name.ts:11
+  - [orchestration] `RESERVED_DRIVERS` ← src/workflow/reserved-drivers.ts:7
+    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+
+## buildHandlerRegistry (src/hook-handlers.ts)
+
+- [entry] `buildHandlerRegistry` ← src/hook-handlers.ts:1354
+    - [service] `entryLayout` ← src/namespaced-entries.ts:74
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+  - [orchestration] `DriverNameSchema` ← src/workflow/driver-name.ts:11
+  - [orchestration] `RESERVED_DRIVERS` ← src/workflow/reserved-drivers.ts:7
+    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+
+## filterHandlersForConfig (src/hook-handlers.ts)
+
+- [entry] `filterHandlersForConfig` ← src/hook-handlers.ts:1472
+    - [service] `entryLayout` ← src/namespaced-entries.ts:74
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `usesMemberFilters` ← src/resource-namespaces.ts:46
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+      - [data] `HookStdinSchema` ← src/hook-dispatch.ts:27
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+  - [orchestration] `DriverNameSchema` ← src/workflow/driver-name.ts:11
+  - [orchestration] `RESERVED_DRIVERS` ← src/workflow/reserved-drivers.ts:7
+    - [service] `GIT_HOOK_EVENTS` ← src/git-hook.ts:35
+    - [service] `TEAMAI_BIN_DIR` ← src/builtin-hooks.ts:39
+    - [service] `normalizeToolName` ← src/utils/tool-names.ts:28
+    - [service] `FOREGROUND_PAYLOAD_KEYS` ← src/hook-fast-path.ts:40
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+
+## ResourceHandler (src/resources/base.ts)
+
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `SESSION_PLATFORM_FACTS` ← src/session-flow/adapters/platform-facts.ts:6
+  - [orchestration] `reportCommandError` ← src/index.ts:91
+    - [service] `antiSlopRules` ← oxlint-plugin-teamai/anti-slop/index.ts:21
+    - [service] `LAUNCH_ADAPTERS` ← src/launch-registry.ts:13
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `teamToolInstances` ← src/tool-instances.ts:311
+    - [service] `runsOwnBinary` ← packages/runtime-t3/src/tool-instances.ts:22
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `importedName` ← oxlint-plugin-teamai/imports.js:12
+    - [service] `FAMILY` ← oxlint-plugin-teamai/utils.js:10
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `PROJECT_RESOURCE_TYPES` ← src/projects.ts:19
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+    - [service] `isInteractive` ← src/utils/prompt.ts:27
+    - [service] `prompts` ← packages/runtime-sandbox/src/prompt.ts:29
+    - [service] `settleLateUsageReport` ← src/pull.ts:124
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+      - [data] `gitFindsNoRepository` ← src/utils/git-discovery.ts:42
+    - [service] `applyNonInteractiveGitEnv` ← src/utils/git-env.ts:43
+  - [orchestration] `protectedPaths` ← src/workflow/worktree.ts:55
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+
+## EnvHandler (src/resources/env.ts)
+
+- [entry] `EnvHandler` ← src/resources/env.ts:370
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `listRepoFilesRecursive` ← src/resources/repo-resource.ts:14
+    - [service] `resolveLegacyRole` ← src/config.ts:86
+    - [service] `isCaseInsensitiveFs` ← src/utils/partition.ts:68
+      - [data] `RoleIdSchema` ← src/roles.ts:54
+    - [service] `extractToml` ← src/wiki-engine/code-knowledge/extractors/config.ts:13
+    - [service] `CODE_COLLECTION_VERSION` ← src/wiki-engine/code-knowledge/code-collector.ts:28
+    - [service] `mapKindToEvidenceType` ← src/wiki-engine/code-knowledge/code-fact-kind.ts:9
+    - [service] `isMetadataRelation` ← src/wiki-engine/code-knowledge/code-extractors.ts:22
+    - [service] `isPlaceableType` ← src/push-namespaces.ts:59
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+
+## RulesHandler (src/resources/rules.ts)
+
+- [entry] `RulesHandler` ← src/resources/rules.ts:70
+- [entry] `ResourceHandler` ← src/resources/base.ts:36
+      - [data] `ToolPathsSchema` ← src/types.ts:25
+    - [service] `TOOL_IDS` ← src/tools.ts:17
+    - [service] `useToolInstances` ← src/tool-registry.ts:39
+    - [service] `defineRule` ← oxlint-plugin-teamai/rules/tool-registry.js:38
+    - [service] `readWorkspaceChildren` ← src/workspace-children.ts:83
+    - [service] `gitBinary` ← src/utils/git.ts:44
+    - [service] `RUN_MODES` ← src/launch-context.ts:20
+      - [data] `PackageScopeSchema` ← src/pkg/types.ts:3
+    - [service] `syncFolders` ← src/utils/fs.ts:30
+    - [service] `isPlainJson` ← src/utils/json.ts:8
+      - [data] `JsonValueSchema` ← packages/shared/src/json.ts:4
+    - [service] `resolveRealCwd` ← packages/tool-core/src/sessions/fs.ts:32
+      - [data] `ToolArgumentsSchema` ← packages/tool-core/src/sessions/ir.ts:41
+    - [service] `classifyCopy` ← src/resources/delivered-copies.ts:56
+    - [service] `MCP_EXCLUDE_OWNER` ← src/git-exclude.ts:44
+    - [service] `WRITER_IDS` ← src/git-exclude-delivered.ts:35
+    - [service] `assertSafePath` ← src/utils/path-safety.ts:15
+    - [service] `PackageAdapter` ← src/pkg/adapters/base.ts:12
+    - [service] `RESOURCE_LAYOUTS` ← src/resources/resolver.ts:120
+    - [service] `FOLDER_MARKERS` ← src/folder-markers.ts:19
+      - [data] `isSafeNamespaceSegment` ← src/manifest-schema.ts:55
+    - [service] `warnOnce` ← src/utils/warn-once.ts:11
+      - [data] `isManifestV2` ← src/wiki-engine/manifest-schema.ts:89
+    - [service] `packageRoot` ← src/package-info.ts:38
+    - [service] `isActiveNamespace` ← src/namespace-resolver.ts:33
+    - [service] `FolderFiles` ← src/resources/folder-files.ts:82
+    - [service] `RuleFolders` ← src/resources/rule-folders.ts:241
+    - [service] `PATH_VARIABLES` ← src/resources/delivered-folders.ts:44
+    - [service] `splitRuleFrontmatter` ← src/resources/team-rule.ts:28
+    - [service] `AGENT_FILE_EXTENSIONS` ← src/resources/agent-format.ts:26
+
+## placeHandlers (packages/runtime-t3/src/place.ts)
+
+- [entry] `placeHandlers` ← packages/runtime-t3/src/place.ts:82
+    - [service] `STOP_SETTLE_MS` ← packages/runtime-paseo/src/conversation.ts:65
+    - [service] `paseoHome` ← packages/runtime-paseo/src/daemon/address.ts:45
+    - [service] `connectRuntime` ← packages/runtime-testing/src/connect.ts:28
+    - [service] `codexHomes` ← packages/runtime-paseo/src/daemon/connect.ts:133
+      - [data] `recordStore` ← packages/runtime-kit/src/journal.ts:37
+    - [service] `paseoKeyOf` ← packages/runtime-paseo/src/journal.ts:174
+    - [service] `isPaseoTool` ← packages/runtime-paseo/src/providers.ts:30
+  - [orchestration] `answerCallTool` ← src/workflow/runtimes/host.ts:58
+    - [service] `savedHosts` ← packages/runtime-paseo/src/daemon/host.ts:32
+    - [service] `dashboardClient` ← src/dashboard/client.ts:17
+    - [service] `OLDEST_PASEO` ← packages/runtime-paseo/src/daemon/client.ts:34
+    - [service] `notOffered` ← packages/runtime-paseo/src/offer.ts:25
+    - [service] `readsTokens` ← packages/runtime-paseo/src/usage.ts:30
+    - [service] `offer` ← packages/runtime-t3/src/offer.ts:87
+    - [service] `toolInstancesIn` ← scripts/verify/instances.ts:26
+    - [service] `instanceAdder` ← packages/runtime-t3/src/instances.ts:31
+    - [service] `judging` ← packages/runtime-paseo/src/judge.ts:32
+    - [service] `EVIDENCE_DIR` ← packages/runtime-sandbox/src/judge.ts:31
+    - [service] `parseOptions` ← packages/runtime-paseo/src/options.ts:23
+    - [service] `CONTAINER_ENGINES` ← packages/runtime-sandbox/src/options.ts:35
+    - [service] `projectAt` ← packages/runtime-t3/src/place.ts:51
+  - [orchestration] `PLACE_CHECKOUT_FILES` ← src/workflow/conformance/place.ts:4
+    - [service] `serve` ← packages/runtime-paseo/src/runtime.ts:70
+    - [service] `serve` ← packages/runtime-sandbox/src/runtime.ts:123
+    - [service] `STOP_WAIT_MS` ← packages/runtime-t3/src/conversation.ts:42
+    - [service] `DRIVERS` ← packages/runtime-t3/src/sessions.ts:26
+    - [service] `platforms` ← packages/tool-agy/src/sessions.ts:7
+      - [data] `agyStoreRoots` ← packages/tool-agy/src/session-adapter.ts:77
+    - [service] `CopilotAdapter` ← packages/tool-copilot/src/session-adapter.ts:151
+    - [service] `facts` ← packages/tool-agy/src/facts.ts:23
+    - [service] `facts` ← packages/tool-claude/src/facts.ts:31

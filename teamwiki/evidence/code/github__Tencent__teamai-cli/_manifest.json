@@ -1,7 +1,4 @@
 {
-  "schemaVersion": "team-wiki.codebase-output-manifest.v2",
-  "project": "github__Tencent__teamai-cli",
-  "generatedAt": "2026-11-27T16:43:54.998Z",
   "components": [
     {
       "slug": "src",
@@ -22,7 +19,10 @@
       "docPath": "evidence/code/github__Tencent__teamai-cli/oxlint-plugin-teamai.md",
       "title": "oxlint-plugin-teamai",
       "category": "component",
-      "confidence": "EXTRACTED"
+      "confidence": "EXTRACTED",
+      "entrypoints": [
+        "noReflectApplyRule (oxlint-plugin-teamai/anti-slop/rules/no-reflect-apply.ts:6)"
+      ]
     },
     {
       "slug": "scripts",
@@ -41,7 +41,14 @@
       "docPath": "evidence/code/github__Tencent__teamai-cli/packages.md",
       "title": "packages",
       "category": "component",
-      "confidence": "EXTRACTED"
+      "confidence": "EXTRACTED",
+      "entrypoints": [
+        "WRAPPER_PREFIX (packages/runtime-kit/src/outer.ts:21)",
+        "serveRuntime (packages/runtime-kit/src/serve.ts:112)",
+        "HostRouteSchema (packages/runtime-sandbox/src/provider.ts:122)",
+        "placeHandlers (packages/runtime-t3/src/place.ts:82)",
+        "appendRegularFile (packages/shared/src/regular-file.ts:188)"
+      ]
     },
     {
       "slug": "tsup.config.ts",
@@ -70,7 +77,17 @@
       "title": "vitest.windows.config.ts",
       "category": "component",
       "confidence": "EXTRACTED"
+    },
+    {
+      "slug": ".github",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/.github.md",
+      "title": ".github",
+      "category": "component",
+      "confidence": "EXTRACTED"
     }
   ],
-  "edges": []
+  "edges": [],
+  "schemaVersion": "team-wiki.codebase-output-manifest.v2",
+  "project": "github__Tencent__teamai-cli",
+  "generatedAt": "2026-11-27T16:45:29.538Z"
 }

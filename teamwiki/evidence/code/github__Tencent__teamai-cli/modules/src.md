@@ -6,33 +6,33 @@ source: [src/]
 
 # src
 
-**1025 facts** (component: 733, config: 36, interface: 231, error: 25)
+**6067 facts** (component: 4108, config: 96, interface: 1764, error: 99)
 
-**Depends on**: tsup.config.ts, vitest.config.ts, vitest.e2e.config.ts, vitest.windows.config.ts, scripts, oxlint-plugin-teamai, packages
-**Depended by**: scripts, packages
+**Depends on**: oxlint-plugin-teamai, tsup.config.ts, vitest.config.ts, vitest.e2e.config.ts, vitest.windows.config.ts, packages, scripts, .github
+**Depended by**: scripts, packages, .github
 
 ## Core components
 
-- `getHermesConfigPath` ← src/hermes-config.ts:15 (66 refs)
-- `hermesContextFileBudget` ← src/hermes-config.ts:23 (66 refs)
-- `upsertSoulRules` ← src/hermes-config.ts:137 (66 refs)
-- `readSoulRules` ← src/hermes-config.ts:164 (66 refs)
-- `removeSoulRules` ← src/hermes-config.ts:181 (66 refs)
-- `getHermesAllowlistPath` ← src/hermes-config.ts:186 (66 refs)
-- `upsertHermesHook` ← src/hermes-config.ts:245 (66 refs)
-- `removeHermesHookByCommand` ← src/hermes-config.ts:283 (66 refs)
-- `addHermesAllowlist` ← src/hermes-config.ts:333 (66 refs)
-- `hasHermesHookCommands` ← src/hermes-config.ts:352 (66 refs)
-- `removeHermesAllowlist` ← src/hermes-config.ts:378 (66 refs)
-- `enableHermesPlugin` ← src/hermes-config.ts:396 (66 refs)
-- `disableHermesPlugin` ← src/hermes-config.ts:412 (66 refs)
-- `isHermesPluginDisabled` ← src/hermes-config.ts:431 (66 refs)
-- `isHermesPluginEnabled` ← src/hermes-config.ts:438 (66 refs)
-- `resolveLegacyRole` ← src/config.ts:86 (61 refs)
-- `refreshRoleAssignment` ← src/config.ts:237 (61 refs)
-- `loadTeamConfig` ← src/config.ts:309 (61 refs)
-- `teamToolIds` ← src/config.ts:335 (61 refs)
-- `loadTeamAgentLanguage` ← src/config.ts:351 (61 refs)
+- `DriverIdentity` ← src/workflow/types.ts:21 (524 refs)
+- `OutputSchema` ← src/workflow/types.ts:27 (524 refs)
+- `StepHitl` ← src/workflow/types.ts:43 (524 refs)
+- `onlyPersonAnswers` ← src/workflow/types.ts:61 (524 refs)
+- `unattendedChoice` ← src/workflow/types.ts:69 (524 refs)
+- `WorkflowStep` ← src/workflow/types.ts:77 (524 refs)
+- `Budget` ← src/workflow/types.ts:184 (524 refs)
+- `ForEach` ← src/workflow/types.ts:189 (524 refs)
+- `WorkflowLoop` ← src/workflow/types.ts:203 (524 refs)
+- `StepLoop` ← src/workflow/types.ts:213 (524 refs)
+- `TeamPlace` ← src/workflow/types.ts:225 (524 refs)
+- `ConfinedPlace` ← src/workflow/types.ts:233 (524 refs)
+- `StepWorkspace` ← src/workflow/types.ts:238 (524 refs)
+- `STEP_ACTIONS` ← src/workflow/types.ts:241 (524 refs)
+- `hasAction` ← src/workflow/types.ts:244 (524 refs)
+- `EndOutcome` ← src/workflow/types.ts:248 (524 refs)
+- `WorkflowFrom` ← src/workflow/types.ts:251 (524 refs)
+- `StepWorkflow` ← src/workflow/types.ts:256 (524 refs)
+- `stepWorkflow` ← src/workflow/types.ts:262 (524 refs)
+- `isWorkflowFile` ← src/workflow/types.ts:271 (524 refs)
 
 ## Config
 

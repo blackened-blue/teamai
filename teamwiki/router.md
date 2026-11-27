@@ -4,7 +4,7 @@
 
 | 域 | 入口 | 核心职责 | 路由关键词 |
 |---|---|---|---|
-| 其他 | [[code/github__Tencent__teamai-cli/index]] | **2729 facts** extracted from 161 files. Graph: 1108 nodes, 815 edges. | src, oxlint-plugin-teamai, scripts, packages, tsup.config.ts, vitest.config.ts |
+| 其他 | [[code/github__Tencent__teamai-cli/index]] | **13807 facts** extracted from 1040 files. Graph: 7307 nodes, 18743 edges. | src, oxlint-plugin-teamai, scripts, packages, tsup.config.ts, vitest.config.ts |
 
 ## 路由规则
 

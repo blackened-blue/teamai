@@ -1,4 +1,15 @@
 {
-  "entries": [],
-  "scannedAt": "2026-11-27T16:43:53.764Z"
+  "entries": [
+    {
+      "component": "src",
+      "type": "MQ",
+      "count": 2,
+      "confidence": "MEDIUM",
+      "patterns": [
+        "for await (const event of ctx.event.subscribe({ signal: controller.signal })) {",
+        "diagnostics.subscribe('child_process', (message) => {"
+      ]
+    }
+  ],
+  "scannedAt": "2026-11-27T16:45:23.544Z"
 }
