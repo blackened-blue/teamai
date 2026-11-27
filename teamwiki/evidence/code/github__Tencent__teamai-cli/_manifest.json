@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "team-wiki.codebase-output-manifest.v2",
+  "project": "github__Tencent__teamai-cli",
+  "generatedAt": "2026-11-27T16:43:54.998Z",
+  "components": [
+    {
+      "slug": "src",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/src.md",
+      "title": "src",
+      "category": "component",
+      "confidence": "EXTRACTED",
+      "entrypoints": [
+        "getHandler (src/resources/index.ts:36)",
+        "getAllHandlers (src/resources/index.ts:40)",
+        "inferDomain (src/utils/search-index.ts:281)",
+        "teamaiWrapperPath (src/builtin-hooks.ts:112)",
+        "teamaiWrapperSource (src/builtin-hooks.ts:117)"
+      ]
+    },
+    {
+      "slug": "oxlint-plugin-teamai",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/oxlint-plugin-teamai.md",
+      "title": "oxlint-plugin-teamai",
+      "category": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "slug": "scripts",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/scripts.md",
+      "title": "scripts",
+      "category": "component",
+      "confidence": "EXTRACTED",
+      "entrypoints": [
+        "observerReads (scripts/verify/observer.ts:58)",
+        "startObserver (scripts/verify/observer.ts:236)",
+        "main (scripts/agent-wait-budget.ts:853)"
+      ]
+    },
+    {
+      "slug": "packages",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/packages.md",
+      "title": "packages",
+      "category": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "slug": "tsup.config.ts",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/tsup.config.ts.md",
+      "title": "tsup.config.ts",
+      "category": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "slug": "vitest.config.ts",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/vitest.config.ts.md",
+      "title": "vitest.config.ts",
+      "category": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "slug": "vitest.e2e.config.ts",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/vitest.e2e.config.ts.md",
+      "title": "vitest.e2e.config.ts",
+      "category": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "slug": "vitest.windows.config.ts",
+      "docPath": "evidence/code/github__Tencent__teamai-cli/vitest.windows.config.ts.md",
+      "title": "vitest.windows.config.ts",
+      "category": "component",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "edges": []
+}

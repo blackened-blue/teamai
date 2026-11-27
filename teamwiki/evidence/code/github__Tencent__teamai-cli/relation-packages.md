@@ -1,0 +1,64 @@
+---
+title: github__Tencent__teamai-cli relations (packages)
+domain: code-knowledge
+---
+
+# Relations (packages)
+
+- `./step.js` ← packages/runtime-tools/src/index.ts:3
+- `./agy-transcript.js` ← packages/tool-agy/src/index.ts:3
+- `./definitions.js` ← packages/tool-agy/src/index.ts:4
+- `./detect.js` ← packages/tool-agy/src/index.ts:5
+- `./launch.js` ← packages/tool-agy/src/index.ts:6
+- `./sessions.js` ← packages/tool-agy/src/index.ts:7
+- `./definitions.js` ← packages/tool-claude/src/index.ts:3
+- `./detect.js` ← packages/tool-claude/src/index.ts:4
+- `./launch.js` ← packages/tool-claude/src/index.ts:5
+- `./sessions.js` ← packages/tool-claude/src/index.ts:6
+- `./codebuddy-tokens.js` ← packages/tool-codebuddy/src/index.ts:3
+- `./definitions.js` ← packages/tool-codebuddy/src/index.ts:4
+- `./detect.js` ← packages/tool-codebuddy/src/index.ts:5
+- `./launch.js` ← packages/tool-codebuddy/src/index.ts:6
+- `./sessions.js` ← packages/tool-codebuddy/src/index.ts:7
+- `./definitions.js` ← packages/tool-codex/src/index.ts:3
+- `./launch.js` ← packages/tool-codex/src/index.ts:4
+- `./sessions.js` ← packages/tool-codex/src/index.ts:5
+- `./definitions.js` ← packages/tool-copilot/src/index.ts:2
+- `./launch.js` ← packages/tool-copilot/src/index.ts:3
+- `./sessions.js` ← packages/tool-copilot/src/index.ts:4
+- `./definitions.js` ← packages/tool-cursor/src/index.ts:2
+- `./detect.js` ← packages/tool-cursor/src/index.ts:3
+- `./launch.js` ← packages/tool-cursor/src/index.ts:4
+- `./sessions.js` ← packages/tool-cursor/src/index.ts:5
+- `./definitions.js` ← packages/tool-dsh/src/index.ts:2
+- `./detect.js` ← packages/tool-dsh/src/index.ts:3
+- `./definitions.js` ← packages/tool-hermes/src/index.ts:2
+- `./detect.js` ← packages/tool-hermes/src/index.ts:3
+- `./launch.js` ← packages/tool-hermes/src/index.ts:4
+- `./sessions.js` ← packages/tool-hermes/src/index.ts:5
+- `./definitions.js` ← packages/tool-joycode/src/index.ts:3
+- `./sessions.js` ← packages/tool-joycode/src/index.ts:4
+- `./definitions.js` ← packages/tool-kiro/src/index.ts:2
+- `./launch.js` ← packages/tool-kiro/src/index.ts:3
+- `./definitions.js` ← packages/tool-muse/src/index.ts:3
+- `./detect.js` ← packages/tool-muse/src/index.ts:4
+- `./launch.js` ← packages/tool-muse/src/index.ts:5
+- `./muse-session.js` ← packages/tool-muse/src/index.ts:6
+- `./sessions.js` ← packages/tool-muse/src/index.ts:7
+- `./definitions.js` ← packages/tool-openclaw/src/index.ts:2
+- `./detect.js` ← packages/tool-openclaw/src/index.ts:3
+- `./launch.js` ← packages/tool-openclaw/src/index.ts:4
+- `./definitions.js` ← packages/tool-opencode/src/index.ts:3
+- `./launch.js` ← packages/tool-opencode/src/index.ts:4
+- `./opencode-db.js` ← packages/tool-opencode/src/index.ts:5
+- `./sessions.js` ← packages/tool-opencode/src/index.ts:6
+- `./definitions.js` ← packages/tool-pi/src/index.ts:3
+- `./detect.js` ← packages/tool-pi/src/index.ts:4
+- `./launch.js` ← packages/tool-pi/src/index.ts:5
+- `./pi-session.js` ← packages/tool-pi/src/index.ts:6
+- `./sessions.js` ← packages/tool-pi/src/index.ts:7
+- `./definitions.js` ← packages/tool-qoder/src/index.ts:3
+- `./launch.js` ← packages/tool-qoder/src/index.ts:4
+- `./sessions.js` ← packages/tool-qoder/src/index.ts:5
+- `./definitions.js` ← packages/tool-trae/src/index.ts:2
+- `./definitions.js` ← packages/tool-zcode/src/index.ts:2

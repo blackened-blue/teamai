@@ -1,0 +1,1011 @@
+{
+  "version": 2,
+  "lastScan": "2026-11-27T16:43:55.008Z",
+  "project": "github__Tencent__teamai-cli",
+  "files": [
+    {
+      "relativePath": "src/index.ts",
+      "sha256": "4c662ff2a4b076ed44a427cc323302416f4c18d34e3c928b7e77a86554be5801",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/rebuild-wiki-index.ts",
+      "sha256": "3bd55cfa6954eb8bb575fe7c145956ecd79228a5cd8be89da6115e76e95a53e9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/anti-slop/index.ts",
+      "sha256": "e9f585bd13b8e6dd995a4439709316f0b449f3e98b136ec4f2fc471fb39d8639",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/verify/observer.ts",
+      "sha256": "e0eb2a7a5d3b0e53d6e027f648993a74cdf7299938c537a917d11ad84a38c123",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/maintenance/index.ts",
+      "sha256": "85937caa917dd97d538f2ab8b4558eb466515409acdbe50d8c69ba92b38a6b51",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/index.ts",
+      "sha256": "947a2467a969dcd11eaac3496af5795cb06d3067b0ad9923bc8796c367875e21",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/resources/index.ts",
+      "sha256": "78891334e00e1b46195bbbbabc86b7554d4c362dd10c7cac6588d4b4bdc74961",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/session-flow/index.ts",
+      "sha256": "9c6bedb679973755199b4695b531a2130e2d0a20cf5a7a9c54acdfc423cedd19",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/token-usage/index.ts",
+      "sha256": "850dd19b7274e56c390f325a1731c15519709c13a86fe4be94f02d23b0d21031",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/utils/cache-index.ts",
+      "sha256": "12c8ad26a2f60cf34a5e0dc8a9e20afe88f20c13c4e7ef56c0c89c15744df8c4",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/utils/search-index.ts",
+      "sha256": "ac9d036d468b18c58c6d20d88a23e80146a64b8ca035e4adab3e3942cef1c177",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/runtime-tools/src/index.ts",
+      "sha256": "f9c282cd65a71516eb65affb5e1049eb8c60ba792350c06d380a7413825067b9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-agy/src/index.ts",
+      "sha256": "aafa4f90d9a6912aa2c12c7ddfae7bbb3d53fcf50f7dd21185f59dc3aad1cf9f",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-claude/src/index.ts",
+      "sha256": "963914cee9e4529383f7e35c9512cd39ba7372fc16027a15117c2ea63bcb679c",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-codebuddy/src/index.ts",
+      "sha256": "59749b1a8cae4f566550c33172fc52636a4f4e2ad6342e88c35413cd24f3ffec",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-codex/src/index.ts",
+      "sha256": "15350821fcc07f17498b3a0fd9930b7bc8230b1de3080fdd5d4b1b13db0a70b3",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-copilot/src/index.ts",
+      "sha256": "1619280900f1421e76bf2cba1d454573b14250fd07259242c4d13abed681ea08",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-cursor/src/index.ts",
+      "sha256": "e51fc8a35fbbda5f02704707f9f387825fa76a7657b0aac1e5beddbb85d51ef3",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-dsh/src/index.ts",
+      "sha256": "a1f47357d9e054fada057ae05cd54c700434cda727df94b2a86c6cd2ca15149c",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-hermes/src/index.ts",
+      "sha256": "5909b00d2ffdcb1a14d70a9c66fbc310a3f55ce0d7ee144ba883846eeadd9247",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-joycode/src/index.ts",
+      "sha256": "84daf2b22e35967e87a2ed247688240b2f3dca0e87af1af2e82b02ff82de1b67",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-kiro/src/index.ts",
+      "sha256": "56c089d24390a98b8c73912126440f0f8343ca3097617a8723f381a7fbd15508",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-muse/src/index.ts",
+      "sha256": "7796db1aca5f4b6ddb0c48b333c70649578422585da982560a6497871d135ebe",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-openclaw/src/index.ts",
+      "sha256": "f2b0e277268b45bd34974078f85be3270666c7d47e66ae4febb955ac1d14249f",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-opencode/src/index.ts",
+      "sha256": "5ecd6c0eb12565b4d38330b4d6ff1b2b53ed13eeac8ec6edc22ffa47c1841d66",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-pi/src/index.ts",
+      "sha256": "ed93b43cd5e0b633e4de32629203ea545f8add89769f3857b9fb850df8be5425",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-qoder/src/index.ts",
+      "sha256": "242fb40df33d51c8e785529f07375c66f07e310b45e7609aaa9890389bb7021a",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-trae/src/index.ts",
+      "sha256": "5714436b2ce335d45ba69c431d1d60d751573cdc642b3af64e805d1a8cc573af",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-zcode/src/index.ts",
+      "sha256": "bd2252b46b6cc97735ffd548bdfd2a290414fe4bf8894666b3d8ad6f27cb571c",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/cnb/index.ts",
+      "sha256": "d541a4cb759f5c4eec504ec5d6c56c58af7f1f0a0dcd89c77050149a698fa4a9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/git/index.ts",
+      "sha256": "efd2644090aa5109a298123cda0408b61bdb2035e08b691492c1ffdbb1f38156",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/gitcode/index.ts",
+      "sha256": "9da77f820dc8796d565f8fb626800dae15af9da9ce61fc32ddd7de601d928ac8",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/github/index.ts",
+      "sha256": "73ad23de18d65f132300698b5952a035bb37ed232031db81534369fa25364938",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/gitlab/index.ts",
+      "sha256": "dee4edbfc6049217936bb2c2b6a87415e168a4df79f3acfcbecfd5d48872cecf",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/providers/tgit/index.ts",
+      "sha256": "33868d88b881cac00bc3e0f239de5eb183ba96eee706d4534551eff3ed6f7844",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/session-flow/adapters/index.ts",
+      "sha256": "57e5a8afafa6ecf37ecf96d9c95b943f0148bc63694634e5a4a0c1989987a3cc",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/wiki-engine/adapters/index.ts",
+      "sha256": "b7723e448937d6cda09a00292249e68693ffbb0dbfddfd06bfcec981ccc503c9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-claude/src/testing/index.ts",
+      "sha256": "625983cd7369b195f0682602bbe1df1de4fd9c9928130e638302bea6650337a8",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-codex/src/testing/index.ts",
+      "sha256": "24f6592e840f6af4f614408e271c9f6de3430fe46857dc32667d88cb55dd3631",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "packages/tool-opencode/src/testing/index.ts",
+      "sha256": "3a5fa899be4e9953f636b25f71119e997b50b4690425f4b0b3de684e464f5363",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/wiki-engine/code-knowledge/ast/index.ts",
+      "sha256": "976d8e6b0e74e8561f3efd9a232609cd7ea653e0f50c73408a7222d984d8a221",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/wiki-engine/code-knowledge/extractors/index.ts",
+      "sha256": "14f2813669dc291cbf6ae45e999c4a6a96e98898a04aab244983e885fb47b2e4",
+      "language": "typescript"
+    },
+    {
+      "relativePath": ".coding-ci.yaml",
+      "sha256": "fd2d4d7e449bec3a2d9eb2c24d74cf32ade444e3839378341253df29e3df2bd8",
+      "language": "yaml"
+    },
+    {
+      "relativePath": ".oxlintrc.json",
+      "sha256": "680764471fdf9f8626b20e29022fc0dd0a49fa3476d61921fea70e215276fc34",
+      "language": "json"
+    },
+    {
+      "relativePath": "package.json",
+      "sha256": "d346706b9d70b0867cc37a00e242c5ec4bcf4da357891ec7fba015347b45ccb2",
+      "language": "json"
+    },
+    {
+      "relativePath": "scb-check.toml",
+      "sha256": "a314a7765c2c2100ea700c4d818ab7236afbcfcdaa6f5df781d69e60eced9b03",
+      "language": "toml"
+    },
+    {
+      "relativePath": "tsconfig.json",
+      "sha256": "c4f99c1d486e0bedc40a478cac055993f25a7b5940e1e76804e05f3a497d8d54",
+      "language": "json"
+    },
+    {
+      "relativePath": "tsup.config.ts",
+      "sha256": "8448521a5336b42cd89fad10dda965f27d778bd626ddfa58de0cbf47f27e9fb4",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "vitest.config.ts",
+      "sha256": "fe23205b479bf28d4a301f1df11d7dd5a70948d74fdadba9deba991aa594c5fd",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "vitest.e2e.config.ts",
+      "sha256": "6ed19b533ac24eaba74b320866a1c26f31ba0b9380b817959c53ea9c0708b623",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "vitest.windows.config.ts",
+      "sha256": "6a37a810699034d400d51c4443513b5e182d4cf153eca41f5e8bb0bf91c1c921",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "drivers/teamai-claude.yaml",
+      "sha256": "f36916545567f64d1e705feedd4ad37ac7a4eb904e4cc7447dceba66890d9a2f",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "drivers/teamai-codex.yaml",
+      "sha256": "c3960d7c01d05c8726932bfc75762b2a7fedf6c93d19844859dc8d2b790d6463",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "drivers/teamai-local.yaml",
+      "sha256": "376c82dbb1f6ee4112e7c4ba07edfc52668753b2efc3d8222f209c40f7cf0d29",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "drivers/teamai-opencode.yaml",
+      "sha256": "07d55228b0add560d4669fbf59287666c1e7e096de5e2dbcacd645ac1c1763e3",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "drivers/teamai-paseo.yaml",
+      "sha256": "5c2a6c06c3dc34825254f6983c56fe80172745ecce1e6c9b093f7735ec7d7ed5",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "drivers/teamai-sandbox.yaml",
+      "sha256": "1d03e422a92db74545da6c4f4df1a8e2029ddb79dc79e5cf2f7916b9afd0fa31",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "drivers/teamai-t3.yaml",
+      "sha256": "47b27d20f95a7bbea248d61c15648b833cf2a068c72da098129fc172e578d5fb",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/failure-codes.js",
+      "sha256": "b2cd908505e02a7565eb99350b3c1a0a61308a4a628c2b2eaa4a89f02b93e429",
+      "language": "javascript"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/fs-calls.js",
+      "sha256": "2da7b23438fbf7adf6d4f4a48ae69067179d155557c584094489f9b9104a3aa8",
+      "language": "javascript"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/imports.js",
+      "sha256": "356f75f58c64c703d365cc7848e3d631cd68c5e26d8980da899ae62c86a93b07",
+      "language": "javascript"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/index.js",
+      "sha256": "520596cfab51a4a8da5ddde2f93529e02d7f8b528da5000e4a7b6ef32c4fdddc",
+      "language": "javascript"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/tool-ids.generated.json",
+      "sha256": "f86e6d57a3361f75c585147274b44fdf32fde46c10d73ee238514d8d2b8d81ac",
+      "language": "json"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/tsconfig.json",
+      "sha256": "b4f30648886b4bc247a92d1b4acc9ecfda5894da2313c6d0551db75c03ea727e",
+      "language": "json"
+    },
+    {
+      "relativePath": "oxlint-plugin-teamai/utils.js",
+      "sha256": "fba516217c93b8527bd53a8bea4604972db8ad77fd8d569f8d31471a1fdf4115",
+      "language": "javascript"
+    },
+    {
+      "relativePath": "runtimes/teamai-paseo.yaml",
+      "sha256": "740247b8f7f2045c2e0389e7cb347e548d7f0b3f3cf5e4529abddc0e4e633cdd",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "runtimes/teamai-sandbox.yaml",
+      "sha256": "7a8ace1b9bb14a0092d10bd513228013248dab712efab0d76f71fc3e1ff9d768",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "runtimes/teamai-t3.yaml",
+      "sha256": "54fb196c0c0be72ca71337913e8b0d3c4942d446021bd5306ea4ae79cb9e0f0b",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-bwrap.yaml",
+      "sha256": "478b37801eac268259112044fb50bd2131105d5363479ac35713d055a8efffbb",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-default.yaml",
+      "sha256": "51840e867eae1da822848af0a96f301455a8cb5ce99280819ce012f95516193b",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-docker.yaml",
+      "sha256": "f776b4586e8ec7971521c06e8beb914b2d5e8fbbb7a9a0e0e544012951658994",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-podman.yaml",
+      "sha256": "501697dd169f691b4e3ad87614ee0a6223ff4bdc671375959863cd276cd8296b",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-sbx.yaml",
+      "sha256": "4a63b3809003b9fd0a8d334e48b33a67d7c43f981b9589c1b50d7780c179a49e",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-seatbelt.yaml",
+      "sha256": "1445c5c801c6258f90c3deb45d16956ea05faa315fd74be19fc26c45e31661b0",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "sandboxes/teamai-vercel.yaml",
+      "sha256": "c5c0172346079a5fbf6dd0f5e2db016ccacd7ae0fa577600291858004b61581e",
+      "language": "yaml"
+    },
+    {
+      "relativePath": "scripts/agent-context-budget.mjs",
+      "sha256": "d333f64f83cd1b07538649beebe9b2eeef91b6a1f22577575e62e0848be0bde7",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/agent-context-budget.ts",
+      "sha256": "eae03911ab007bdfb0961ca065034eb3fb036f663f16729e652b3c808d28c003",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/agent-wait-budget.mjs",
+      "sha256": "0a7e3eed31ce3c2db0755752067c0bab35698576f913b29dfed2b76e21bb175e",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/agent-wait-budget.ts",
+      "sha256": "7e17a159e1538784a5e729910aff59c636235b31efe0567814ae7064eedd48a1",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/agent-wait-preload.cjs",
+      "sha256": "2460b4d1b2b37c8b3a675cba7315748fcd6b45245d2c601296af08abb22486b3",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/backfill-contributors.ts",
+      "sha256": "7150fd601509b58e61e1c738d03db112a6e14d46efa0f476015c1d6d8c373ca9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/check-docs.mjs",
+      "sha256": "4607184450fc0be9db2e6cc4a97cabdf977ae1b23dcb1bdf33b1e5cb983a66ca",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/check-docs.ts",
+      "sha256": "5cbb79a5493d1bc55b22712c97bfc081e0f0e614bfc7734e65839b83e8520d73",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/ci-recipe.ts",
+      "sha256": "9ab09eb618de7818de35335ae5a610c1685f0be249177d9c2bb0437a06b3b3e2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/command-table.ts",
+      "sha256": "f8b62d42557bf258a27d9caa716f0668e6f7026342a82e37b80ec1081974fae9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/commands-reference.ts",
+      "sha256": "695687c4b783f85ae9996b8ed7c8f66812057df527ad6cf2337411fe82d366b7",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/doc-check.ts",
+      "sha256": "449493d1147d933b96f0dfd4b8040d75ce2ca9ffe2a0f94aebcc8bb9b04d9500",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/glossary-avoid.ts",
+      "sha256": "6550e9c74a2838d3a92d368c402c431f0ede5857362a3bd300772ecd1a6f9753",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/mock-teamai-server.mjs",
+      "sha256": "0ecfc676505138931efa647fbfb4c6b8a7f32f5ad5a31fb404b88b58e340da09",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/model-prices.ts",
+      "sha256": "a8b726f5dc2a1806d8cddc49c9a4309e130d77af60b5a5f11dbb60a29c03cd54",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/model-routes-e2e.mjs",
+      "sha256": "6075d95f0d5e484b243bca678811e6b23a88db1235a1f922eee4ed9ee18ee6ab",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/tool-support.ts",
+      "sha256": "fa5bececb836aa726830dfb51ee04fb4f7ddef4a093b2a5192e8830857006ffd",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/typescript-loader.mjs",
+      "sha256": "43b9f7789cf25eb518087de248991cd1600567b58d2b130ddc66512539ad7a35",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/update-model-prices.mjs",
+      "sha256": "e5b6781fc77008bea52ed11a5c6124a7d76110dd319bd42fe095c34bbd977595",
+      "language": "text"
+    },
+    {
+      "relativePath": "scripts/update-model-prices.ts",
+      "sha256": "a398fd1d252c3dc894de7d808ed837a3b18b26f55c28a3a487fa808cf7d56dd5",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "scripts/verify.mjs",
+      "sha256": "a5a0d3af631fb2594d2790c7e23ed82c7b1c652c5f3bf92e7b5ab331d3df9213",
+      "language": "text"
+    },
+    {
+      "relativePath": "src/agent-observation.ts",
+      "sha256": "787ce119b481541815a1385d42fcbe095412265da587b005e09f3cb1262ec1c2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/agent-skills.ts",
+      "sha256": "725d1ddc2ec5b7043d43f9119a2ca0fa7cf7ddf985e99cb36cb3f403c34c6028",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/agent-version.ts",
+      "sha256": "84143f0b2a5cf73a0e26566dc2a329358cf492673796539fe2ed32f28ddb0591",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/agy-hook-io.ts",
+      "sha256": "3a23d5f2ebb98c27305f6f4aa44b1a9e06fe681c3df79d3febf7e7c0abf1a09a",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/agy-hooks.ts",
+      "sha256": "21089265c055c87921cde6e1baa1c0da80f1ae9412bf9c761f15f9519e1f3f8d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/api-key.ts",
+      "sha256": "c88f91097e32caef3e5269babafb0b18f106469a7132c2aace08071b38934da6",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/autocompact-reconcile.ts",
+      "sha256": "04aaf06e33b55969fb951e87408c67c06f5e4b55ce715bb481282e2af1f85109",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/bin.ts",
+      "sha256": "3af29b6ae64141c735ab4855a31390b1ec3da3d7e2ffccf1e20f9207ff0c3a17",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/bootstrap.ts",
+      "sha256": "e4e2f3d9bc62a6e7522c3038d1faaf5d3fe70bdcbf91596d5268002b01a54c85",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/bridged-team-hooks.ts",
+      "sha256": "5d115d298896936ae725f3a31845a8364be5c62f3d90ab547a0a5dc67d4564e1",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/builtin-agents.ts",
+      "sha256": "e658485d6ae1bad2f8cc810a431ee69b68036df84c34394ad2a07ef382fb6395",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/builtin-hooks.ts",
+      "sha256": "7589a4e0eb33351b982fa5776186c4a96d87a2802a7f8dfeabd34399fb2e99e9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/builtin-rules.ts",
+      "sha256": "4d257f7b329ba678412ce601fe16549b919b2e4b65207945a5c5cbfb653e25ac",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/builtin-skills.ts",
+      "sha256": "5754e225d5b8417f6aadc4890ed18a30e5938d97214cb3bb1def7cb75e163a56",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/bundled-runtime.ts",
+      "sha256": "8c7f7ebf4841eb956cecd8d2ae9ebcad3c2d6f2e051e93f42049ad74e4ac622e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/cache-cmd.ts",
+      "sha256": "66d1b0bd115cdf5a63d7332e9228f9e8b62af8ab69043f3e4316aae7443b9d7d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/checkout-roles.ts",
+      "sha256": "0f32de71e84495baafca58f383e1c69272f60e376f40be8e24419a86d53048fb",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/claude-hook-host.ts",
+      "sha256": "5dc98c357bbf812c0c993daf359fbf71bfac650de28ba119f0158547843f2feb",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/cli-int.ts",
+      "sha256": "33c67ee7a3796e71cbfa614d5af2f589204eb96077ebc7544db78ee161486830",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/cli-skill-names.ts",
+      "sha256": "7b395721993aa10ae2bef71b96b1f36915e4acebfbcb8d327da8b78ddac95be9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/cli.ts",
+      "sha256": "8b3f7ce831d1ab0875e9999136d4754d8622475dd6e17a86d4db337be7df6ff1",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/clone.ts",
+      "sha256": "2ff9c4b3511c082f6cd5179d9393f035c832943f01ad23945d826a91db1450be",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/coauthor-reconcile.ts",
+      "sha256": "3a11f67081d2d0266fca44417c0f90b931df78a98025e85d36220cfe5060d82c",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/code-knowledge-recall.ts",
+      "sha256": "c66155b899591ffe57bf032fa91bab315be025e8c7fb0e4a0a563b3865a6a7a5",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebase-cmd.ts",
+      "sha256": "ea7500b58feae29acc2513b07cf57f82266088369b663e7b8290ef602078e02b",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebase-extract.ts",
+      "sha256": "7aa8cab40f2a50f40046b9bcd10b0dc3ed9055610451594f2a9e6110d91e2d30",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebase-freshness.ts",
+      "sha256": "100c9eccac127d7bde86645fc3d12203ab8256170e588c824de28598d9769a2d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebase-upgrade-wiki.ts",
+      "sha256": "06ab49465502a86124f1f86cd1f1c8e638dd52cf95f9fa1526859f2047361f0b",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebase-wiki-lint.ts",
+      "sha256": "9622fa5e54d01c3e0252611e0e18153a3ace718494e87299578a4775b3935a3f",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebase.ts",
+      "sha256": "05cedf18a3db8a46ba3df09c6714eef36950c455fef0f0c342af45102298d0c2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codebuddy-team-hooks.ts",
+      "sha256": "c49d31e8588502b9090b7da2698e1fcc460d9ffa5e758131ffaf3637bdc9ce2d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codex-project-trust.ts",
+      "sha256": "70a861a807d831174f6f964b3f2c8b06df7b48092fd74f6582a49ec76af9cb1a",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codex-team-hooks.ts",
+      "sha256": "9ffd3c5efa870f6cbd8485326e4f11167c87537369663199d712deaa87673d86",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/codex-trust.ts",
+      "sha256": "65dbf95ad6324df58a4df1c8849ce0f6c9e06cdb637309f4dc41def66a5259b2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/command-shell.ts",
+      "sha256": "a2d63ba430f7098cb1c12e84e702a8fb227b72f6c5709edb265a3afcbd9299c6",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/config.ts",
+      "sha256": "66042a71a41f0db2288c91ada686a3bd7ef7b81090c5d96a340fa90946e7a198",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/contribute-check.ts",
+      "sha256": "154a0b66f3a9d40cd29a618a23ede0b821d53cc825927106b70b4dab983ac71e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/contribute.ts",
+      "sha256": "31794eded4265b4ddc724f82b337529759d322b6026c92f17dd1fd753873f8af",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/copilot-hook-claim.ts",
+      "sha256": "11421285707d4397e6f95703d058470327db1943994ef3b43f8e5527bd1241fa",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/cursor-user-rules.ts",
+      "sha256": "ad88033fa64803ac62e5bdcb4773c6247d4c8662188e4e0af540f8f5328c26dc",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/dashboard-collector.ts",
+      "sha256": "86f7423859c7dc530cfacd30e33ca455461494d238ec4563e89baafbe549b94e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/dashboard-html.ts",
+      "sha256": "81927d045281326f7d0e520b918160a041daccd4bea0b960c782687f58e18c5a",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/dashboard-scope.ts",
+      "sha256": "03df863ec9412d5f337409c406b0f77f91feef6aef34be8615df51f63350280b",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/dashboard.ts",
+      "sha256": "d53657e59e75bcbef1899c8f2caecfcc74e0f44453474abd6bba372d8616189b",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/deep-enrich.ts",
+      "sha256": "f7b04c0d0368d46019a1940f79289788a61416264946a4414b9d7ee7d68d2145",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/default-driver.ts",
+      "sha256": "13978e86c380c9883062227d778a55bfeba3dce0af9091388abf88105ef23231",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/default-drivers.ts",
+      "sha256": "91fe8935c4a465e6d68d9d60ffdc592d0475d0a5435db0c488857802dcf68437",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/default-folders.ts",
+      "sha256": "c825daeb1dd8ba4dc8cdedf6a8dd48f851ba40533c5744ea164c37a49c2ea4d7",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/default-scorers.ts",
+      "sha256": "c27a10de55bb54d449d7346c1712ae036def6999c8172c3058879a47cbfb249c",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/default-workflows.ts",
+      "sha256": "48c0fdd5ab522eb07defb78ef25d9398ea431cdb94ca2599eb0780ce1373dd69",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/digest-failures.ts",
+      "sha256": "c47389d65feba9979900c177fb8b2249e0954cd45e660cc7f45748956a617e05",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/digest.ts",
+      "sha256": "e531e533513905387a17b0abc241bbf1b1feee6a9cd2d830c51efe5166b63c9b",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/doctor-agent-models.ts",
+      "sha256": "b9bad06a01897294aff7d8c8ca58ef2ff7f8103bb5690ab950ffaf4f8863a5ec",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/doctor-delivery.ts",
+      "sha256": "94ee1198f2c97120c84168906982fb3c3d3ae8a9e25ce45563268820b6d0b689",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/doctor-git-exclude.ts",
+      "sha256": "9cf13869a2b2b07feb533a813d35c34cfa76613c441adf762dd150776e6f621e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/doctor-sandboxes.ts",
+      "sha256": "ffced1706bbe7a2e6f412b054910f49f606982d45b923989a23337d11ac3791d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/doctor-scorers.ts",
+      "sha256": "68dfb28852fb2d909ccb0ef2647dc538b4233053af139aac34449ec3fbe7a864",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/doctor.ts",
+      "sha256": "38b7a7956d8a49e701f2ce9e10a50cd12c7ffb52477f6aeb93a3b74992b779ae",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/driver-identity.ts",
+      "sha256": "8ce594127f28817ae3e0fbbcf3295d89c36a8f91f9322a72ef4af2164174667f",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/dry-run-guard.ts",
+      "sha256": "edc634d82c4a0ff7254fd634456d0f4e88a7b0fda0a63c152d8f42256f0f7128",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/dsh-hooks.ts",
+      "sha256": "92beaf697467ca468208d43c61d21dcaf29030d355be9fcf8242a3113687b593",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/enrich-with-ai.ts",
+      "sha256": "39a670d1968fcb070d5680c05b6221b6e1bdb3b8c3441f0acadcd62046e827e2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-advisories.ts",
+      "sha256": "d749d3de2dce7ac37b5eb1b4f26766ecc3e5875d84a6b712a6ff303d73c36256",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-commands.ts",
+      "sha256": "c14ece20b72709e1a5ef7360ff737da8b90bd7597e5abda25b12f7e83003daeb",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-exec.ts",
+      "sha256": "1f5391055e52e9b49e806fd01b83681ca7220ba4c0fc493dd1824092f19bd3e2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-listing.ts",
+      "sha256": "ebea86a517a6c3264e22c197bd7169cb9c791eb02326dc259bae4dda9855f58f",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-reserved.ts",
+      "sha256": "1e251539bcdcb2a8c93dbf4c4ce0a6cd9cbb5b56001a0eeee58b83be8f809f4e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-resolution.ts",
+      "sha256": "3ead45ad4e61bee80f685ebd6a50ab92968a1a878f3c4f3cf3fa49bca135c9b9",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/env-sh-exports.ts",
+      "sha256": "b5179bb5c4f88cab968a909dab929131f8467f1251b501bfbcafd8531129cb71",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/exclude.ts",
+      "sha256": "1b06de4784bddbbaf4b7d5a0a0197f0208228aa99a1f274b152937dd783d7ce2",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/folder-markers.ts",
+      "sha256": "f0c905160cce110e615dd872e446f1f1d66e74b18a3fe231daa7c1a6befd3f0a",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/git-exclude-delivered.ts",
+      "sha256": "86d4ee02afcf906712a85eb07957b605168cc83809fd2704c59f11b306d71c33",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/git-exclude-notices.ts",
+      "sha256": "10b50192452d67ec64be012475de3c688c5ea38e3068a3008fe0661d50870f6a",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/git-exclude.ts",
+      "sha256": "4241877e6181b4ae05da3b07d6ea6e372010eb5124d9268865d5eb6eefe4fc37",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/git-hook.ts",
+      "sha256": "87eba0bf89106eecb21c473ca1b7f56e40c1df181f8a24079cba014a80a161a8",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/global-options.ts",
+      "sha256": "7384a066b4f89925d41a813579a35457a2b923ddea7edbdcbf38c1693fc83f32",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/graph-aggregate.ts",
+      "sha256": "08b6d2b1db37fbf0710bd6f08a4a1e130cce2e5fd908cb223236e1630ff99637",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hermes-config.ts",
+      "sha256": "6660ac3bde25578726036a358dc24913d1c4ae602ca4ed694d371a2cade1aa69",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hermes-hooks.ts",
+      "sha256": "53bed519ff9fcc673a3d9de7b56d327d60fd153ad24249ae4c43e040d1cb9a8d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hook-command.ts",
+      "sha256": "ccf204ed84f4091e1b4b8a06d130a59cee767baef3e2ef7f1e901af5d9988381",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hook-dispatch-cli.ts",
+      "sha256": "afa01e8e2fb0ab6435fbc1ec86d1288edb1f19e2b8e0ce5eecd4576fa980277e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hook-dispatch.ts",
+      "sha256": "0f0d98331a3afc6a1db0829347f078dd774bec49e9cf2988ef3c9f7eeca6cabe",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hook-fast-path.ts",
+      "sha256": "5ddeed2ade0d39059a94b529a341a1de5a1ed00a449b9aff2c00b95fed8e3e10",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hook-handlers.ts",
+      "sha256": "1c717a3d4cb6bebd12dc9ff33f85cd5c27ae7f815b77289eb537481ee9044f82",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hooks-cmd.ts",
+      "sha256": "4465f09b7f82b7c7ff865ddd723ce18c47c596fb605b15065ca2265f51e31e9e",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/hooks.ts",
+      "sha256": "00307ca448249f02876e1223ca51523049f8419b58dd56024bfd2647fd188049",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-codebase.ts",
+      "sha256": "65eec252e97346fcecd23ce146103c1a2b161bb9431d172d6dab1d953704b514",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-from-mr.ts",
+      "sha256": "a389dbeb04498c01ce8a0903741619ec8292c7cafae9625746a49426893d8953",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-from-repo.ts",
+      "sha256": "ca588b25a15631f8da134d49a216c1178d5f7c9f1a8b378ece5f9c01b9cc9f82",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-iwiki.ts",
+      "sha256": "4d0a4bb7152537bf4f97069c25d73afe6e99e10fd5d03d1e12ec49a8cae86eb3",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-local.ts",
+      "sha256": "769f17d10d1893e11cc3bf357f96ee35a15ffe5ebd2748586e48e081c6079aee",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-mr.ts",
+      "sha256": "10ca488eaf201fd313ced2b8743072159903cf89e43b7c18a98b025645925ca0",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-org.ts",
+      "sha256": "f15b57b8536721b98a47faecadc828dbbb808769fe95064a7388a7844a1f124b",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-repo-list.ts",
+      "sha256": "d8209675e6b2c0b94a9d7baddbf0f17eef9f0583bbd552fcb4e05b015d420018",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import-repo.ts",
+      "sha256": "8d03c0ed4a7a5997d5da2ddf31eebe92c11c8f7003df1810fd2455f694acc856",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/import.ts",
+      "sha256": "3c5d693b31ae21b5132a8cea2b8d913a0a83477155d27c7169055578113ec239",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/init.ts",
+      "sha256": "931b060defc9bd36d61ab11759796ef8c997767dbd330d251ec99a15e1bb4af8",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/install-prefix.ts",
+      "sha256": "7a30c62d40bbdee26ca02ca489f32af2748e7eb97c1dc5ef81e11ccedf9c0dfe",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/installations.ts",
+      "sha256": "73af90a6304467bfccf99eb885f65925da3a0138248c56093d3d0d9653d4de01",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/instruction-targets.ts",
+      "sha256": "cf509b6791bdc05a8681c7b21503669d8f8bdcd13c3dc0574a85a09afd6a0fc3",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/iwiki-dual.ts",
+      "sha256": "ec8f2fb709fdcc5577506751f2ef87c54c62de8c4d61b422240d5bb29b2b5e9d",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/kiro-hooks.ts",
+      "sha256": "378673d940e5d5920e50b4c05d6c482384bf4a3e5dcc752f0141f7b14f36b752",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/known-agents.ts",
+      "sha256": "9d9a577281ac645789336161de2c7bb4056a6e47448b00e1d7d7ce85f6903cff",
+      "language": "typescript"
+    },
+    {
+      "relativePath": "src/launch-context.ts",
+      "sha256": "f49c4fdb6ed0912ac2ce57590c1ecee5d6ec9833c95695e2a08a78b32103be50",
+      "language": "typescript"
+    }
+  ],
+  "sourceSubdir": "",
+  "headSha": "56fabd9e8e7493efc140133ed095131e6ef26f8f",
+  "repoUrl": "https://github.com/Tencent/teamai-cli.git",
+  "repoIdentity": "https://github.com/Tencent/teamai-cli"
+}
